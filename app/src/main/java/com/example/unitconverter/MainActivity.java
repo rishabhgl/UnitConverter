@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
         ref = pos;
-        String position = Integer.toString(pos);
-        Toast.makeText(parent.getContext(),position,Toast.LENGTH_SHORT).show();
+        String text = "Converting " +parent.getItemAtPosition(pos).toString();
+        Toast.makeText(parent.getContext(),text,Toast.LENGTH_SHORT).show();
     }
 
     @Override

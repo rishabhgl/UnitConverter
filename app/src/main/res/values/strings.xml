@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">UnitConverter</string>
     <string name="input">Input</string>
-    <string name="hint">Input Double</string>
+    <string name="hint">Your Input Goes Here</string>
     <string name="selector">type of conversion</string>
     <string name="convert">Convert</string>
     <string name="answer">Answer</string>
     <string-array name="choices">
-        <item>kilometers to miles</item>
-        <item>centimeters to inches</item>
-        <item>inches to feet</item>
-        <item>years to hours</item>
-        <item>days to seconds</item>
+        <item>Kilometers to Miles</item>
+        <item>Centimeters to Inches</item>
+        <item>Inches to Feet</item>
+        <item>Years to Hours</item>
+        <item>Days to Seconds</item>
     </string-array>
 </resources>

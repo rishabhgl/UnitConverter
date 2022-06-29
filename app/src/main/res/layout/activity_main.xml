@@ -30,7 +30,8 @@
             android:id="@+id/selector"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -51,6 +52,7 @@
             android:textAppearance="?android:textAppearanceLarge"
             android:id = "@+id/answer_text_view"
             android:gravity="center"
-            android:text =""/>
+            android:text =""
+            android:textFontWeight="700"/>
 
     </LinearLayout>
