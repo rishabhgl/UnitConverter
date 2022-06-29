@@ -41,11 +41,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Toast.makeText(this,"Nothing Selected", Toast.LENGTH_SHORT);
     }
 
-        double input, answer;
+        double input = -1, answer;
 
     public void convertUnit(View view) {
         EditText inputView = findViewById(R.id.input_edit_text);
-        input = Double.parseDouble(inputView.getText().toString());
+        try {
+            input = Double.parseDouble(inputView.getText().toString());
+        }
+        catch(NumberFormatException ex) {
+            //They didn't enter a number.  Pop up a toast or warn them in some other way
+            Toast.makeText(this,"Give an input to convert!!",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         switch(ref){
             case 0:
                 answer = input * 0.621371;
