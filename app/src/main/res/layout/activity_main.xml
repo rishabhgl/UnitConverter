@@ -8,19 +8,20 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
-            style="@style/HeaderTextStyle"
-            android:text="@string/input" />
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="@string/input" />
 
-        <EditText
-            android:id="@+id/input_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_marginBottom="16dp"
-            android:hint="@string/hint"
-            android:inputType="numberDecimal"
-            android:textColorHint="@android:color/darker_gray" />
+    <EditText
+        android:id="@+id/input_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alegreya"
+        android:layout_weight="1"
+        android:hint="@string/hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="@android:color/darker_gray" />
 
         <TextView
             style="@style/HeaderTextStyle"
@@ -39,6 +40,7 @@
             android:layout_weight="1"
             android:layout_gravity="center_horizontal"
             android:text ="@string/convert"
+            android:fontFamily="@font/alegreya_sc_bold_italic"
             android:onClick="convertUnit"/>
 
         <TextView
@@ -52,7 +54,7 @@
             android:textAppearance="?android:textAppearanceLarge"
             android:id = "@+id/answer_text_view"
             android:gravity="center"
-            android:text =""
-            android:textFontWeight="700"/>
+            android:fontFamily="@font/alegreya"
+            android:text =""/>
 
     </LinearLayout>
